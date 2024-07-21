@@ -1,0 +1,26 @@
+name: Docker Image CI
+
+# Author: K11E3R
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Check out the repository's code
+    - uses: actions/checkout@v4
+
+    # Build the Docker image
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+
+    # - name: Log in to Docker Hub
+    #   run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+    # - name: Push the Docker image
+    #   run: docker push my-image-name:$(date +%s)
