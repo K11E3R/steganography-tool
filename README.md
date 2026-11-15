@@ -1,4 +1,20 @@
-# Steganography Tool
+<div align="center">
+
+# 🕵️ Steganography Tool
+
+**Hide a secret image inside another image — invisible to the eye, recoverable bit‑for‑bit.**
+
+Least‑Significant‑Bit (LSB) image‑in‑image steganography in pure Python.
+
+![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?logo=python&logoColor=white)
+![Technique](https://img.shields.io/badge/technique-LSB-7c3aed)
+![Pillow](https://img.shields.io/badge/Pillow-imaging-306998)
+![License](https://img.shields.io/badge/license-MIT-brightgreen)
+![PRs](https://img.shields.io/badge/PRs-welcome-success)
+
+</div>
+
+---
 
 ## Overview
 
